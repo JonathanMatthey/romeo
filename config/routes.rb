@@ -1,11 +1,12 @@
 Romeo::Application.routes.draw do
+
+  root :to => 'search#show'
+
   get "profile/edit"
 
   get "profile/new"
 
   get "profile/view"
-  
-  root :to => 'search#show'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
